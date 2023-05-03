@@ -1,0 +1,44 @@
+/* *{
+    border: 2px solid red;
+} */
+h1 {
+    margin-left: 20px;
+  }
+body{
+    background-color: #fff2ce;
+}
+#accordion{
+    margin-right: 10px;
+}
+#accordion li label span{
+    font-size: 22px;
+    color: #333;
+    transform: rotate(90deg);
+    
+}
+#accordion li label{
+    display: flex;
+    padding: 10px ;
+    background-color: #fff;
+    cursor: pointer;
+    position: left;
+    transition: all 0.5s ease;
+    justify-content: space-between;
+    align-items: center;
+}
+#accordion li input[type="radio"]:checked + label span {
+    transform: rotate(90deg);
+}
+
+#accordion input[type="radio"] {
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    background-color: #fff;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
